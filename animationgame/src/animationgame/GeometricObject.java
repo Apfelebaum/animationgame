@@ -50,6 +50,7 @@ public class GeometricObject {
 			moveTo(new Vertex(x,y));
 		}
 		public void move(Vertex pos(moveTo(pos.add(v))))
-		}
+}
+}
 
 	

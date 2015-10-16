@@ -17,10 +17,10 @@ public class testVertex {
 		System.out.println(v2);
 		System.out.println(v2.length());
 		v2.normalize();
-		System.out.println(v2);*/
+		System.out.println(v2);
 		
 		GeometricObject o1= new GeometricObject(5,6,v1);
-		System.out.println(o1);
+		System.out.println(o1);*/
 		
 			}
 }

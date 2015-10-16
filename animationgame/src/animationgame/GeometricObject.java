@@ -28,7 +28,7 @@ public class GeometricObject {
 		public GeometricObject(Vertex pos){
 			this(0,0, pos);}
 		public GeometricObject(){
-			GeometricObject(10);
+			this(0,0,new Vertex(0,0));
 		}
 		
 		public double getWidth(){return width;}

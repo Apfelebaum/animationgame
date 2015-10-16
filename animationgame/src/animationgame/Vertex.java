@@ -12,9 +12,6 @@ public class Vertex {
 	
 	public static void main(String[] args) {
 
-Vertex v1 = new Vertex(42,4);
-Vertex v2 = new Vertex(12,2);
-
 	}
 public String toString(){
 	return "("+x+","+y+")";

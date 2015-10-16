@@ -14,4 +14,4 @@ public class Circle extends GeometricObject {
 		public boolean equals(Object that){
 			return (that instanceof Circle && super.equals(that));
 		}
-}
+}		

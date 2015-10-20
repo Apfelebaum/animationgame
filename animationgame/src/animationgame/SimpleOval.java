@@ -12,7 +12,7 @@ public class SimpleOval extends GeometricObject{
 		@Override	public String toString(){
 			return "SimpleOval("+super.toString()+")";
 		}
-		public boolean equals(Object that){
+		@Override public boolean equals(Object that){
 			return (that instanceof SimpleOval && super.equals(that));
 		}
 		}

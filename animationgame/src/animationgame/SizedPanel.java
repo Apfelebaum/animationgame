@@ -2,16 +2,16 @@ package animationgame;
 import javax.swing.*;
 
 import java.awt.Dimension;
-public class SizePanel extends JPanel{
+public class SizedPanel extends JPanel{
 		int preferredwidth=400;
 		int preferredhight=300;
 		
-	public SizePanel(int w, int h){
+	public SizedPanel(int w, int h){
 		preferredwidth=w;
 		preferredhight=h;
 	}
 
-	public SizePanel(){};
+	public SizedPanel(){};
 	@Override public Dimension getPreferredSize(){
 		return new Dimension (preferredwidth,preferredhight);
 	}
@@ -20,5 +20,4 @@ public class SizePanel extends JPanel{
 ShowInFrame.show(new SizedPanel());
 		
 	}
-
 }

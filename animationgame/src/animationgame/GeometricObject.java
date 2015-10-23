@@ -1,16 +1,18 @@
 package animationgame;
-
+import java.awt.Color;
 public class GeometricObject {
 
 		public Vertex pos;
 		public double hight;
 		public double width;
+		public Color color;
 	
-		public GeometricObject(double width, double hight,Vertex pos){
+		public GeometricObject(double width, double hight,Vertex pos, Color color){
 			this.pos=pos;
 			this.hight=hight;
 			this.width=width;
-		
+			this.color=color;
+			
 			if(this.width<0){
 				this.width=-this.width;
 				pos.x=pos.x-this.width;}
@@ -19,16 +21,16 @@ public class GeometricObject {
 				this.hight=-this.hight;
 				pos.y=pos.y-this.hight;}
 			}
-		public GeometricObject(double width, double hight){
-			this(width, hight, new Vertex(0,0));
+		public GeometricObject(double width, double hight, Color color){
+			this(width, hight, new Vertex(0,0),color);
 		}
 		public GeometricObject (double width){
-			this(width, width, new Vertex(0,0));
+			this(width, width, new Vertex(0,0),new Color(0,0,0));
 			}
 		public GeometricObject(Vertex pos){
-			this(0,0, pos);}
+			this(0,0, pos,new Color(0,0,0));}
 		public GeometricObject(){
-			this(0,0,new Vertex(0,0));
+			this(0,0,new Vertex(0,0),new Color(0,0,0));
 		}
 		
 		public double getWidth(){return width;}
@@ -36,7 +38,7 @@ public class GeometricObject {
 		public Vertex getPos(){return pos;}
 		
 		public String toString(){
-			return "width="+width+",hight="+hight +",pos="+pos;
+			return "width="+width+",hight="+hight +",pos="+pos+",color="+color;
 		}
 		public double circumferences (){return 2*(width+hight);}
 		public double area (){return width*hight;}

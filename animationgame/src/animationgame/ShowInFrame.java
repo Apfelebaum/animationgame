@@ -8,5 +8,5 @@ public class ShowInFrame {
 			f.pack();
 			f.setVisible(true);
 	}
-	public static void show(JComponent c) {show("",c);}
+	public static void show(SizedPanel sizedPanel) {show("",sizedPanel);}
 }
